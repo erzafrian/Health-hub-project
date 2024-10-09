@@ -1,18 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Health Hub</title>
-    <link rel="stylesheet" href="css/healthub.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/healthub.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   </head>
-  <body class="vh-100 overflow-hidden">
+  <body class="vh-100">
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
         <!--Logo-->
-        <a class="navbar-brand fs-4" href="#">Health Hub</a>
+        <a class="navbar-brand fs-4" href="healthub.html">Health Hub</a>
         <!--Toggle-->
         <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -28,12 +30,10 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                <a class="nav-link active" aria-current="page" href="healthub.html">Beranda</a>
               </li>
               <li class="nav-item mx-2 dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Kategori
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Kategori </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="artikel.html">Artikel Kesehatan</a></li>
                   <li><a class="dropdown-item" href="sehat.html">Resep Sehat</a></li>
@@ -41,22 +41,20 @@
                 </ul>
               </li>
               <li class="nav-item mx-2 dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Cek Kesehatan
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Cek Kesehatan </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="bmi.html">Kalkulator BMI</a></li>
                   <li><a class="dropdown-item" href="bmr.html">Kalkulator BMR</a></li>
                 </ul>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Konsultasi</a>
+                <a class="nav-link" href="https://wa.me/6281357175498">Konsultasi</a>
               </li>
             </ul>
             <!--Login-->
             <div class="login d-flex justify-content-center align-items-center gap-3">
               <a href="login.html" class="text-white text-decoration-none px-3 py-1 border rounded-3">Masuk</a>
-              <a href="signup.html" class="text-white text-decoration-none px-3 py-1 rounded-3" style="background-color: #5C8374;">Daftar</a> 
+              <a href="login.html" class="text-white text-decoration-none px-3 py-1 rounded-3" style="background-color: #5c8374">Daftar</a>
             </div>
           </div>
         </div>
@@ -64,16 +62,320 @@
     </nav>
     <!--Header-->
     <header class="main-header">
-      <div class="slide-container">
-        <div class="slide-1"></div>
-        <div class="slide-2"></div>
-        <div class="slide-3"></div>
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/running.jpg" class="d-block w-100 py-7" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/vegetables.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/woman.png" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </header>
     <!--Content-->
-    
+      <!--Navgation-->
+      <div class="container">
+      <div class="row">
+       <div class="col-md-3">
+        <div class="kartu">
+         <img alt="Icon of a book with a magnifying glass" height="40" src="/assets/protection.png" width="40"/>
+         <div class="kartu-title">
+          Kesehatan
+         </div>
+        </div>
+       </div>
+       <div class="col-md-3">
+        <div class="kartu">
+         <img alt="Icon of a female doctor" height="40" src="/assets/recipe.png" width="40"/>
+         <div class="kartu-title">
+          Resep Sehat
+         </div>
+        </div>
+       </div>
+       <div class="col-md-3">
+        <div class="kartu">
+         <img alt="Icon of a health checkup" height="40" src="/assets/sport.png" width="40"/>
+         <div class="kartu-title">
+          Tips Olahraga
+         </div>
+        </div>
+       </div>
+       <div class="col-md-3">
+        <div class="kartu">
+         <img alt="Icon of a community with chat bubbles" height="40" src="/assets/calculator.png" width="40"/>
+         <div class="kartu-title">
+          Cek Kesehatan
+         </div>
+        </div>
+       </div>
+      </div>
+      </div>
+      <!--Artikel-->
+      <article>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-8">
+            <img alt="A woman lying on a couch with a cold compress on her forehead" class="news-image" height="450" src="https://storage.googleapis.com/a1aa/image/vmCtJjgXMmLRPRQIeOSMEviu3ogFbjeas8kqya6OzOpleLInA.jpg" width="800" />
+            <div class="mt-3">
+              <div class="news-category">Infeksi Virus</div>
+              <a class="news-title" href="artikel.html" > Penyakit Virus Marburg </a>
+              <div class="news-content">
+                Meski sampai saat ini belum ditemukan di Indonesia, pemerintah terus waspada terkait keberadaan virus Marburg dan penyebarannya. Terlebih pada 21 Maret lalu, WHO menerima laporan delapan kasus baru penyakit Marburg di
+                Tanzania dengan.
+              </div>
+              <div class="news-meta mt-2">
+                <img alt="Profile picture of dr. Nurul Fajriah Afiatunnisa" height="24" src="https://storage.googleapis.com/a1aa/image/f7mJeZfwbzB5fQ9Et6FC5Xp1DRGZM0e3WpcRL8gROzwE1vgcC.jpg" width="24" />
+                <span class="author"> dr. Nurul Fajriah Afiatunnisa </span>
+                <span class="dot"> • </span>
+                <span class="date"> 09/04/2023 </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card news-card mb-3">
+              <img alt="A person holding an umbrella in the rain" class="card-img-top" height="225" src="https://storage.googleapis.com/a1aa/image/Cg51qJ6P4XJIKJ692h6ge19qierAcxGt3ceF2bnod4KJ9LInA.jpg" width="400" />
+              <div class="card-body">
+                <div class="news-category">Infeksi Virus</div>
+                <a class="card-title" href="artikel.html">Waspada Sebelum Terlambat, Ini Dia Penyakit di Musim Hujan</a>
+                <div class="news-meta mt-2">
+                  <img alt="Profile picture of dr. Nurul Fajriah Afiatunnisa" height="24" src="https://storage.googleapis.com/a1aa/image/f7mJeZfwbzB5fQ9Et6FC5Xp1DRGZM0e3WpcRL8gROzwE1vgcC.jpg" width="24" />
+                  <span class="author"> dr. Nurul Fajriah Afiatunnisa </span>
+                  <span class="dot"> • </span>
+                  <span class="date"> 18/01/2024 </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card news-card mb-3">
+                <img alt="A doctor consulting with a patient" class="card-img-top" height="225" src="https://storage.googleapis.com/a1aa/image/wWdP0VfU5iXtY64p8fB2fe2VncAwWHjDAWOr7EZ0x3iK6XQOB.jpg" width="400" />
+                <div class="card-body">
+                  <div class="news-category">Kanker Serviks</div>
+                  <a class="card-title" href="artikel.html">Punya Kanker Serviks, Berobat ke Dokter Spesialis...</a>
+                  <div class="news-meta mt-2">
+                    <img alt="Profile picture of dr. Mikhael Yosia" height="24" src="https://storage.googleapis.com/a1aa/image/XvN9ffJJHEhvrUSfQRfNpLvZDkujAMCt6IyjDAlk8YId6XQOB.jpg" width="24" />
+                    <span class="author"> dr. Mikhael Yosia, BMedSci, PGCert, DTM&amp;H. </span>
+                    <span class="dot"> • </span>
+                    <span class="date"> 3 minggu lalu </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card news-card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="news-category">Kanker Serviks</div>
+                    <div class="card-title">Punya Kanker Serviks, Berobat ke Dokter Spesialis...</div>
+                    <div class="news-meta mt-2">
+                      <img alt="Profile picture of dr. Mikhael Yosia" height="24" src="https://storage.googleapis.com/a1aa/image/XvN9ffJJHEhvrUSfQRfNpLvZDkujAMCt6IyjDAlk8YId6XQOB.jpg" width="24" />
+                      <span class="author"> dr. Mikhael Yosia, BMedSci, PGCert, DTM&amp;H. </span>
+                      <span class="dot"> • </span>
+                      <span class="date"> 3 minggu lalu </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img alt="A doctor consulting with a patient" class="img-fluid rounded-end" height="112" src="https://storage.googleapis.com/a1aa/image/wWdP0VfU5iXtY64p8fB2fe2VncAwWHjDAWOr7EZ0x3iK6XQOB.jpg" width="200" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </article>
+      <!--Artikel Card-->
+      <section class="artikel-card">
+        <div class="container mt-4">
+          <div class="row">
+           <div class="col-md-3">
+            <div class="card">
+             <img alt="Person holding head in pain" class="card-img-top" height="400" src="https://storage.googleapis.com/a1aa/image/f3YZSvB4v5yBKCvGsc7Lsi83owb4C0WuGQWXX1HA9VhoujyJA.jpg" width="600"/>
+             <div class="card-body">
+              <h6 class="card-category">
+               Stroke
+              </h6>
+              <h5 class="card-title">
+               Pahami Perbedaan TIA dan Jenis Stroke Lainnya
+              </h5>
+              <p class="card-text">
+               Ditinjau secara medis oleh dr. Nona Suci Rahayu, Sp. N • 14/08/2024
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="card">
+             <img alt="Elderly couple walking in a park" class="card-img-top" height="400" src="https://storage.googleapis.com/a1aa/image/4oDjFvdVi8YcJt2eBwuzBX2gIc7geJ2jArXsuncgK7FTdHlTA.jpg" width="600"/>
+             <div class="card-body">
+              <h6 class="card-category">
+               Aktivitas Lansia
+              </h6>
+              <h5 class="card-title">
+               10 Manfaat Olahraga Jalan Kaki untuk Lansia
+              </h5>
+              <p class="card-text">
+               Ditinjau secara medis oleh dr. Carla Pramudita Susanto • 06/09/2024
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="card">
+             <img alt="Doctor consulting with a patient" class="card-img-top" height="400" src="https://storage.googleapis.com/a1aa/image/yzwEVSU48W4BP1HntMkVquKqIlRTeeQVRfoZbKQH5FUh6OKnA.jpg" width="600"/>
+             <div class="card-body">
+              <h6 class="card-category">
+               Stres dan Depresi
+              </h6>
+              <h5 class="card-title">
+               8 Jenis Tes untuk Mendiagnosis Gangguan...
+              </h5>
+              <p class="card-text">
+               Ditinjau secara medis oleh dr. Mikhael Yosia, BMedSci, PGCert DTM&amp;H. • 2 minggu lalu
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="card">
+             <img alt="Person holding arm in pain" class="card-img-top" height="400" src="https://storage.googleapis.com/a1aa/image/umvd7B8Kel3wEKkbACnBCQO4nIG9rt4QRY93O3ZfWbWPdHlTA.jpg" width="600"/>
+             <div class="card-body">
+              <h6 class="card-category">
+               Arthritis (Radang Sendi)
+              </h6>
+              <h5 class="card-title">
+               9 Gejala dan Ciri-Ciri Asam Urat yang Penting Diketahui
+              </h5>
+              <p class="card-text">
+               Ditinjau secara medis oleh dr. Tania Savitri • 22/10/2023
+              </p>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+      </section>
+      <!--Kalkulator-->
+      <section class="kalkulator">
+      <!--BMI-->
+      <div class="calculator-bmi">
+        <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+          <div class="mb-4">
+            <label class="block text-gray-700 mb-2"> Tanggal Lahir Anda </label>
+            <div class="relative">
+              <input class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="DD/MM/YYYY" type="text" />
+              <i class="fas fa-calendar-alt absolute right-3 top-3 text-gray-400"> </i>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 mb-2"> Apa jenis kelamin Anda? </label>
+            <div class="flex space-x-4">
+              <button class="flex items-center justify-center w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <img alt="Icon of a man" class="mr-2" height="24" src="https://storage.googleapis.com/a1aa/image/dSC1FmI8s04iOxFGwhOnUed29BryKUWf4gaxN1aad4ydZfFnA.jpg" width="24" />
+                Laki-laki
+              </button>
+              <button class="flex items-center justify-center w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <img alt="Icon of a woman" class="mr-2" height="24" src="https://storage.googleapis.com/a1aa/image/2PpgevnnJQUXfU71RN9r9CUbeSsHmTu5ggQwiyKH4ud9yeLOB.jpg" width="24" />
+                Perempuan
+              </button>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 mb-2"> Berapa tinggi Anda? (cm) </label>
+            <input class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 mb-2"> Berapa berat badan Anda? (kg) </label>
+            <input class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" />
+          </div>
+          <button class="hitung w-full text-white py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">Hitung</button>
+        </div>
+      </div>
+      <!--BMR-->
+      <div class="calculator-bmr">
+        <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+          <div class="mb-4">
+            <label class="block text-gray-700 mb-2"> Tanggal Lahir Anda </label>
+            <div class="relative">
+              <input class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="DD/MM/YYYY" type="text" />
+              <i class="fas fa-calendar-alt absolute right-3 top-3 text-gray-400"> </i>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 mb-2"> Apa jenis kelamin Anda? </label>
+            <div class="flex space-x-4">
+              <button class="flex items-center justify-center w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <img alt="Icon of a man" class="mr-2" height="24" src="https://storage.googleapis.com/a1aa/image/dSC1FmI8s04iOxFGwhOnUed29BryKUWf4gaxN1aad4ydZfFnA.jpg" width="24" />
+                Laki-laki
+              </button>
+              <button class="flex items-center justify-center w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <img alt="Icon of a woman" class="mr-2" height="24" src="https://storage.googleapis.com/a1aa/image/2PpgevnnJQUXfU71RN9r9CUbeSsHmTu5ggQwiyKH4ud9yeLOB.jpg" width="24" />
+                Perempuan
+              </button>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 mb-2"> Berapa tinggi Anda? (cm) </label>
+            <input class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 mb-2"> Berapa berat badan Anda? (kg) </label>
+            <input class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" />
+          </div>
+          <button class="hitung w-full text-white py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">Hitung</button>
+        </div>
+      </div>
+      </section>
     <!--Footer-->
-    
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h2>Health Hub</h2>
+          <p>
+            Health Hub adalah sebuah platform web yang dirancang untuk menyediakan informasi dan panduan seputar kesehatan serta gaya hidup sehat. Website ini menawarkan beragam konten yang mencakup topik-topik kesehatan umum, seperti
+            artikel kesehatan, resep sehat, dan tips olahraga, serta pengukur indeks massa tubuh dengan tujuan membantu penggunanya untuk meningkatkan kualitas hidup dan kesejahteraan secara keseluruhan.
+          </p>
+        </div>
+
+        <div class="footer-section links">
+          <h2>Menu</h2>
+          <ul>
+            <li><a href="login.html">Masuk</a></li>
+            <li><a href="sehat.html">Resep Sehat</a></li>
+            <li><a href="olahraga.html">Tips Olahraga</a></li>
+            <li><a href="bmi.html">Kalkulator BMI</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section contact">
+          <h2>Hubungi Kami</h2>
+          <p>Email: health@hub.com</p>
+          <p>Kontak: +62 777 999 888</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024. Pt. Sehat Sentosa Makmur Indonesia</p>
+      </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="js\healthub.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>

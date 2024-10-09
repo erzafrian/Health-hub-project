@@ -5,8 +5,8 @@
   border-radius: 0px 0px 10px 10px;
 }
 
-@media(max-width: 991px){
-  .sidebar{
+@media (max-width: 991px) {
+  .sidebar {
     background-color: #1d574f !important;
     backdrop-filter: blur(10px);
     border-radius: 0px 10px 10px 0px;
@@ -21,53 +21,175 @@
   .login {
     padding-top: 1cm;
   }
+
+  .card {
+    margin: 1rem;
+  }
+  
+  .kalkulator {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .calculator-bmr {
+    margin-top: 2rem;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}
+
+/*header*/
+.carousel-item {
+  height: 50vh;
+  min-height: 300px;
+}
+
+/*navigation*/
+.kartu {
+  background-color: #E9EFEC;
+  border: none;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 11px 17px 14px -11px rgba(0,0,0,0.68);
+  -webkit-box-shadow: 11px 17px 14px -11px rgba(0,0,0,0.68);
+  -moz-box-shadow: 11px 17px 14px -11px rgba(0,0,0,0.68);
+  border-radius: 0.25rem;
+}
+.kartu img {
+  width: 40px;
+  height: 40px;
+
+}
+.kartu-title {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*artikel*/
+.news-title {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+
+.news-title:hover {
+  color: green;
+  transform: scale(0.15);
+}
+
+.news-category {
+  color: #6A9C89;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.news-meta {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+.news-meta img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.news-meta .author {
+  font-weight: bold;
+}
+.news-meta .date {
+  margin-left: 5px;
+}
+.news-meta .dot {
+  margin: 0 5px;
+}
+.news-content {
+  font-size: 1rem;
+  color: #333;
+}
+.news-image {
+  width: 100%;
+  height: auto;
+}
+.news-card {
+  border: none;
+}
+
+.row img {
+  border-radius: 0.25rem;
+}
+
+.news-card img {
+  border-radius: 0.25rem;
+}
+.news-card .card-body {
+  padding: 0.5rem 0;
+}
+.news-card .card-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.news-card .card-text {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+/*Artikel Card*/
+.artikel-card {
+  background-color: #C4DAD2;
+}
+
+.row {
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.card-text {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+.card-subtitle {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+.card-category {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #6A9C89;
+}
+.card-footer {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+/*bmi*/
+.kalkulator {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.hitung {
+  background-color: #6A9C89;
 }
 
 
+/*footer*/
 
-.slide-1 {
-  background-image: url(../assets/running.jpg);
-}
-
-.slide-2 {
-  background-image: url(../assets/vegetables.jpg);
-}
-
-.slide-3 {
-  background-image: url(../assets/woman.png);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
+footer {
+  border-radius: 10px 10px 0px 0px;
+  margin-top: 5rem;
   background-color: #6A9C89;
   color: #fff;
   padding: 20px 0;
 }
+
 
 .footer-container {
   display: flex;
@@ -83,13 +205,15 @@ footer{
   margin: 20px;
 }
 
-.footer-section h2{
+.footer-section h2 {
   margin-bottom: 10px;
   font-size: 18px;
   color: #f4f4f4;
 }
 
-.footer-section p, .footer-section ul, .footer-section a {
+.footer-section p,
+.footer-section ul,
+.footer-section a {
   color: #ccc;
 }
 
@@ -107,7 +231,7 @@ footer{
   text-decoration: none;
 }
 
-.footer-section ul li a:hover{
+.footer-section ul li a:hover {
   color: #fff;
 }
 
@@ -117,12 +241,6 @@ footer{
   border-top: 1px solid #444;
 }
 
-.footer-bottom p{
+.footer-bottom p {
   margin: 0;
 }
-
-
-
-
-
-

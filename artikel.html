@@ -2,18 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="shortcut icon" type="hub-icon" href="assets/HEALTHrev2.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Health Hub</title>
     <link rel="stylesheet" href="css/healthub.css" />
     <link rel="stylesheet" href="css/artikel.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   </head>
   <body class="vh-100">
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
         <!--Logo-->
-        <a class="navbar-brand fs-4" href="healthub.html">Health Hub</a>
+        <img class="logo" href="healthub.html" src="assets/HEALTHrev2.png">
         <!--Toggle-->
         <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -29,15 +32,10 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="healthub.html">Beranda</a>
+                <a class="nav-link" aria-current="page" href="healthub.html">Beranda</a>
               </li>
-              <li class="nav-item mx-2 dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Kategori </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="artikel.html">Artikel Kesehatan</a></li>
-                  <li><a class="dropdown-item" href="sehat.html">Resep Sehat</a></li>
-                  <li><a class="dropdown-item" href="olahraga.html">Tips Olahraga</a></li>
-                </ul>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" href="artikel.html">Kesehatan</a>
               </li>
               <li class="nav-item mx-2 dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Cek Kesehatan </a>
@@ -47,81 +45,281 @@
                 </ul>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Konsultasi</a>
+                <a class="nav-link" href="https://wa.me/6281357175498">Konsultasi</a>
               </li>
             </ul>
-            <!--Login-->
-            <div class="login d-flex justify-content-center align-items-center gap-3">
-              <a href="login.html" class="text-white text-decoration-none px-3 py-1 border rounded-3">Masuk</a>
-              <a href="signup.html" class="text-white text-decoration-none px-3 py-1 rounded-3" style="background-color: #5c8374">Daftar</a>
-            </div>
           </div>
         </div>
       </div>
     </nav>
+    <!--Header-->
+    <header>
+      <h1>Artikel Kesehatan</h1>
+      <hr/>
+    </header>
+
     <!--Content-->
-    <!--artikel-->
-    <article>
-      <div class="container">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="healthub.html"> Beranda </a>
-            </li>
-            <li class="breadcrumb-item">
-              <a href="artikel.html"> Artikel Kesehatan </a>
-            </li>
-            <li aria-current="page" class="breadcrumb-item active">Penyakit Virus Marburg</li>
-          </ol>
-        </nav>
-        <div class="d-flex justify-content-between align-items-center">
-          <h1 class="header-title">Penyakit Virus Marburg</h1>
-          <button class="btn btn-outline-secondary" type="button">Penjelas</button>
-        </div>
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" href="#"> Definisi </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Tanda dan gejala </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Penyebab </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Faktor risiko </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Diagnosis </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Pengobatan </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Pencegahan </a>
-          </li>
-        </ul>
-        <div class="content">
-          <img alt="A person lying on a couch with a cold compress on their forehead, appearing unwell" height="400" src="https://storage.googleapis.com/a1aa/image/GJ9pb5yOOzY3IZdyg6hTgNDbI24JGnVHIJN9ewvxLcFuhDyJA.jpg" width="800" />
-          <p>
-            Meski sampai saat ini belum ditemukan di Indonesia, pemerintah terus waspada terkait keberadaan virus Marburg dan penyebarannya. Terlebih pada 21 Maret lalu, WHO menerima laporan delapan kasus baru penyakit Marburg di Tanzania
-            dengan lima kematian.
-          </p>
-          <p>
-            Supaya bisa tetap waspada, cari tahu informasi lengkap terkait
-            infeksi virus Marburg
-            melalui uraian berikut ini!
-          </p>
-          <h2>Apa itu virus Marburg?</h2>
-          <p>Virus Marburg adalah virus penyebab penyakit demam berdarah ganas yang dapat ditularkan dari kelelawar dan antarmanusia.</p>
-          <p>
-            Penyakit virus Marburg (
-            <i> Marburg virus disease </i>
-            /MVD) terbilang langka, tetapi memiliki risiko kematian atau fatalitas mencapai 88%.
-          </p>
+    <!--Artikel-->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="healthub.html"> Beranda </a>
+        </li>
+        <li aria-current="page" class="breadcrumb-item active">Kesehatan</li>
+      </ol>
+    </nav>
+    <section class="baris1">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-3" onclick="document.location='marburg.html'" type="button">
+            <div class="article-card">
+              <img alt="A young girl playing doctor with a teddy bear" height="400" src="https://voltztech.com/img/electriciy.jpg" width="600" />
+              <div class="article-content">
+                <div class="article-category">Kesehatan</div>
+                <div class="article-title">5 Bahaya Kesehatan jika Tinggal di Rumah Dekat SUTET</div>
+                <div class="article-meta">
+                  <img alt="Profile picture of dr. Aisya Fikritama, Sp.A" height="30" src="https://storage.googleapis.com/a1aa/image/He0kzzLpo8VfAEfOitohW50Flwud3FqSGfiANvoE1szAcMVOB.jpg" width="30" />
+                  <div>
+                    Ditinjau secara medis oleh
+                    <span class="author"> dr. Patricia Lukas Goentoro </span>
+                    •
+                    <span class="date"> 5 hari lalu </span>
+                  </div>
+                  <i class="fas fa-bookmark bookmark"> </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" onclick="document.location='marburg2.html'" type="button">
+            <div class="article-card">
+              <img alt="A happy family sitting on a couch" height="400" src="https://www.thecoldwire.com/wp-content/uploads/2021/06/girl-eating-fat-fried-chicken-768x512.jpg" width="600" />
+              <div class="article-content">
+                <div class="article-category">Kesehatan</div>
+                <div class="article-title">Mengapa Makanan Pedas Membuat Tuli Sementara?</div>
+                <div class="article-description"></div>
+                <div class="article-meta">
+                  <img alt="Profile picture of dr. S.T. Andreas, M.Ked(Ped), Sp.A" height="30" src="https://storage.googleapis.com/a1aa/image/aTezkScemimCBke4XgXm4qH1wjxBXrLXQuH4zKHM9wc5NmKnA.jpg" width="30" />
+                  <div>
+                    Ditinjau secara medis oleh
+                    <span class="author"> dr. Andreas Wilson Setiawan, M.Kes. </span>
+                    •
+                    <span class="date"> 3 hari lalu </span>
+                  </div>
+                  <i class="fas fa-bookmark bookmark"> </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" onclick="document.location='marburg3.html'" type="button">
+            <div class="article-card">
+              <img alt="A young girl playing doctor with a teddy bear" height="400" src="https://radlink.com.sg/wp-content/uploads/2024/05/man-having-chest-pain-at-the-park.jpg" width="600" />
+              <div class="article-content">
+                <div class="article-category">Kesehatan</div>
+                <div class="article-title">Sakit Punggung Saat Bernapas? 9 Hal Ini Mungkin Penyebabnya</div>
+                <div class="article-meta">
+                  <img alt="Profile picture of dr. Aisya Fikritama, Sp.A" height="30" src="https://storage.googleapis.com/a1aa/image/He0kzzLpo8VfAEfOitohW50Flwud3FqSGfiANvoE1szAcMVOB.jpg" width="30" />
+                  <div>
+                    Ditinjau secara medis oleh
+                    <span class="author"> dr. Patricia Lukas Goentoro </span>
+                    •
+                    <span class="date"> 6 hari lalu </span>
+                  </div>
+                  <i class="fas fa-bookmark bookmark"> </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" onclick="document.location='marburg4.html'" type="button">
+            <div class="article-card">
+              <img alt="A happy family sitting on a couch" height="400" src="https://th.bing.com/th/id/OIP.wzxu8_IJ32yPXcG1w8tIpAHaE8?w=1024&h=684&rs=1&pid=ImgDetMain" width="600" />
+              <div class="article-content">
+                <div class="article-category">Kesehatan</div>
+                <div class="article-title">6 Manfaat yang Mungkin Didapatkan dari Mencium Bau Kentut</div>
+                <div class="article-description"></div>
+                <div class="article-meta">
+                  <img alt="Profile picture of dr. S.T. Andreas, M.Ked(Ped), Sp.A" height="30" src="https://storage.googleapis.com/a1aa/image/aTezkScemimCBke4XgXm4qH1wjxBXrLXQuH4zKHM9wc5NmKnA.jpg" width="30" />
+                  <div>
+                    Ditinjau secara medis oleh
+                    <span class="author"> dr. Andreas Wilson Setiawan, M.Kes. </span>
+                    •
+                    <span class="date"> 2 minggu lalu </span>
+                  </div>
+                  <i class="fas fa-bookmark bookmark"> </i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </article>
+    </section>
+    <section class="baris2">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-3" onclick="document.location='resep1.html'" type="button">
+            <div class="article-card">
+              <img alt="A young girl playing doctor with a teddy bear" height="400" src="https://th.bing.com/th/id/OIP.4D0jY-GofYsysyAfJYsmRAHaE8?rs=1&pid=ImgDetMain" width="600" />
+              <div class="article-content">
+                <div class="article-category">Resep Sehat</div>
+                <div class="article-title">7 Resep Olahan Jamur yang Sehat dan Mudah Dibuat</div>
+                <div class="article-meta">
+                  <img alt="Profile picture of dr. Aisya Fikritama, Sp.A" height="30" src="https://storage.googleapis.com/a1aa/image/He0kzzLpo8VfAEfOitohW50Flwud3FqSGfiANvoE1szAcMVOB.jpg" width="30" />
+                  <div>
+                    Ditinjau secara medis oleh
+                    <span class="author"> dr. Andreas Wilson Setiawan, M.Kes. </span>
+                    •
+                    <span class="date"> 04/09/2024 </span>
+                  </div>
+                  <i class="fas fa-bookmark bookmark"> </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" onclick="document.location='resep2.html'" type="button">
+            <div class="article-card">
+              <img alt="A happy family sitting on a couch" height="400" src="https://th.bing.com/th/id/OIP.XI3M8VuIbKYg1KBkzrvX2wAAAA?rs=1&pid=ImgDetMain" width="600" />
+              <div class="article-content">
+                <div class="article-category">Resep Sehat</div>
+                <div class="article-title">Perbedaan Peran Ayah dan Ibu dalam Keluarga, Mana yang Penting?</div>
+                <div class="article-description"></div>
+                <div class="article-meta">
+                  <img alt="Profile picture of dr. S.T. Andreas, M.Ked(Ped), Sp.A" height="30" src="https://storage.googleapis.com/a1aa/image/aTezkScemimCBke4XgXm4qH1wjxBXrLXQuH4zKHM9wc5NmKnA.jpg" width="30" />
+                  <div>
+                    Ditinjau secara medis oleh
+                    <span class="author"> dr. Patricia Lukas Goentoro </span>
+                    •
+                    <span class="date"> 29/07/2024 </span>
+                  </div>
+                  <i class="fas fa-bookmark bookmark"> </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" onclick="document.location='resep3.html'" type="button">
+            <div class="article-card">
+              <img alt="A young girl playing doctor with a teddy bear" height="400" src="https://www.pulowatusismamedikal.com/wp-content/uploads/2019/01/5-Makanan-yang-Mengandung-Karbohidrat-Bermanfaat-Bagi-Kesehatan.jpg" width="600" />
+              <div class="article-content">
+                <div class="article-category">Resep Sehat</div>
+                <div class="article-title">5 Cara Membuat Jus Bit yang Enak dan Tidak Bau Langu</div>
+                <div class="article-meta">
+                  <img alt="Profile picture of dr. Aisya Fikritama, Sp.A" height="30" src="https://storage.googleapis.com/a1aa/image/He0kzzLpo8VfAEfOitohW50Flwud3FqSGfiANvoE1szAcMVOB.jpg" width="30" />
+                  <div>
+                    Ditinjau secara medis oleh
+                    <span class="author"> dr. Patricia Lukas Goentoro </span>
+                    •
+                    <span class="date"> 27/07/2024 </span>
+                  </div>
+                  <i class="fas fa-bookmark bookmark"> </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" onclick="document.location='resep4.html'" type="button">
+            <div class="article-card">
+              <img alt="A happy family sitting on a couch" height="400" src="https://th.bing.com/th/id/OIP.U8TWPaNejWFO210ty3zmGAHaE6?rs=1&pid=ImgDetMain" width="600" />
+              <div class="article-content">
+                <div class="article-category">Resep Sehat</div>
+                <div class="article-title">Coba 5 Resep Brokoli yang Menggugah Selera Ini</div>
+                <div class="article-description"></div>
+                <div class="article-meta">
+                  <img alt="Profile picture of dr. S.T. Andreas, M.Ked(Ped), Sp.A" height="30" src="https://storage.googleapis.com/a1aa/image/aTezkScemimCBke4XgXm4qH1wjxBXrLXQuH4zKHM9wc5NmKnA.jpg" width="30" />
+                  <div>
+                    Ditinjau secara medis oleh
+                    <span class="author"> dr. Patricia Lukas Goentoro </span>
+                    •
+                    <span class="date"> 19/05/2024 </span>
+                  </div>
+                  <i class="fas fa-bookmark bookmark"> </i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="baris3">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-3" onclick="document.location='olga1.html'" type="button">
+            <div class="article-card">
+              <img alt="A young girl playing doctor with a teddy bear" height="400" src="https://ajp.com.au/wp-content/uploads/2015/09/34938688_m.jpg" width="600" />
+              <div class="article-content">
+                <div class="article-category">Tips Olahraga</div>
+                <div class="article-title">Memulai Olahraga, Apa yang Harus Dilakukan Lebih Dulu?</div>
+                <div class="article-meta">
+                  <img alt="Profile picture of dr. Aisya Fikritama, Sp.A" height="30" src="https://storage.googleapis.com/a1aa/image/He0kzzLpo8VfAEfOitohW50Flwud3FqSGfiANvoE1szAcMVOB.jpg" width="30" />
+                  <div>
+                    Ditinjau secara medis oleh
+                    <span class="author"> dr. Andreas Wilson Setiawan, M.Kes. </span>
+                    •
+                    <span class="date"> 30/05/2022 </span>
+                  </div>
+                  <i class="fas fa-bookmark bookmark"> </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" onclick="document.location='olga2.html'" type="button">
+            <div class="article-card">
+              <img alt="A happy family sitting on a couch" height="400" src="https://th.bing.com/th/id/OIP.JatSit-FVYvT0KvljIIbOAHaE8?rs=1&pid=ImgDetMain" width="600" />
+              <div class="article-content">
+                <div class="article-category">Tips Olahraga</div>
+                <div class="article-title">Sudah Lama Tidak Olahraga? Ini Tips agar Mulai Rutin Lagi</div>
+                <div class="article-description"></div>
+                <div class="article-meta">
+                  <img alt="Profile picture of dr. S.T. Andreas, M.Ked(Ped), Sp.A" height="30" src="https://storage.googleapis.com/a1aa/image/aTezkScemimCBke4XgXm4qH1wjxBXrLXQuH4zKHM9wc5NmKnA.jpg" width="30" />
+                  <div>
+                    Ditinjau secara medis oleh
+                    <span class="author"> dr. Andreas Wilson Setiawan, M.Kes. </span>
+                    •
+                    <span class="date"> 07/04/2024 </span>
+                  </div>
+                  <i class="fas fa-bookmark bookmark"> </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" onclick="document.location='olga3.html'" type="button">
+            <div class="article-card">
+              <img alt="A young girl playing doctor with a teddy bear" height="400" src="https://images.squarespace-cdn.com/content/v1/628280d1247a547eb47df66e/0a2c2e36-d3ae-4882-ab08-0f78504ef7c6/iStock-1327044894.jpg" width="600" />
+              <div class="article-content">
+                <div class="article-category">Tips Olahraga</div>
+                <div class="article-title">Bolehkah Tidur Setelah Olahraga? Ini Penjelasannya</div>
+                <div class="article-meta">
+                  <img alt="Profile picture of dr. Aisya Fikritama, Sp.A" height="30" src="https://storage.googleapis.com/a1aa/image/He0kzzLpo8VfAEfOitohW50Flwud3FqSGfiANvoE1szAcMVOB.jpg" width="30" />
+                  <div>
+                    Ditinjau secara medis oleh
+                    <span class="author"> dr. Patricia Lukas Goentoro </span>
+                    •
+                    <span class="date"> 06/03/2024 </span>
+                  </div>
+                  <i class="fas fa-bookmark bookmark"> </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" onclick="document.location='olga4.html'" type="button">
+            <div class="article-card">
+              <img alt="A happy family sitting on a couch" height="400" src="https://th.bing.com/th/id/OIP.SzrTQsxXygbocjaBuDwyuQHaE7?w=680&h=453&rs=1&pid=ImgDetMain" width="600" />
+              <div class="article-content">
+                <div class="article-category">Tips Olahraga</div>
+                <div class="article-title">5 Aktivitas Fisik Ringan yang Mudah Dilakukan Setiap Hari</div>
+                <div class="article-description"></div>
+                <div class="article-meta">
+                  <img alt="Profile picture of dr. S.T. Andreas, M.Ked(Ped), Sp.A" height="30" src="https://storage.googleapis.com/a1aa/image/aTezkScemimCBke4XgXm4qH1wjxBXrLXQuH4zKHM9wc5NmKnA.jpg" width="30" />
+                  <div>
+                    Ditinjau secara medis oleh
+                    <span class="author"> dr. Andreas Wilson Setiawan, M.Kes. </span>
+                    •
+                    <span class="date"> 27/09/2022 </span>
+                  </div>
+                  <i class="fas fa-bookmark bookmark"> </i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--Footer-->
     <footer>
       <div class="footer-container">
@@ -137,8 +335,8 @@
           <h2>Menu</h2>
           <ul>
             <li><a href="login.html">Masuk</a></li>
-            <li><a href="sehat.html">Resep Sehat</a></li>
-            <li><a href="olahraga.html">Tips Olahraga</a></li>
+            <li><a href="healthub.html">Beranda</a></li>
+            <li><a href="bmr.html">Kalkulator BMR</a></li>
             <li><a href="bmi.html">Kalkulator BMI</a></li>
           </ul>
         </div>
@@ -154,7 +352,7 @@
         <p>&copy; 2024. Pt. Sehat Sentosa Makmur Indonesia</p>
       </div>
     </footer>
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="js\healthub.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>

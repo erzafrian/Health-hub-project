@@ -1,11 +1,23 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
 
 .navbar {
   background-color: #16423c;
   border-radius: 0px 0px 10px 10px;
 }
 
+.logo {
+  width: 5%;
+}
+
 @media (max-width: 991px) {
+.logo {
+  width: 10%;
+}
+
   .sidebar {
     background-color: #1d574f !important;
     backdrop-filter: blur(10px);
@@ -22,6 +34,7 @@
     padding-top: 1cm;
   }
 
+
   .card {
     margin: 1rem;
   }
@@ -31,8 +44,8 @@
     flex-wrap: wrap;
   }
 
-  .calculator-bmr {
-    margin-top: 2rem;
+  .containerby {
+    margin-top: 3rem;
   }
 
   footer {
@@ -40,9 +53,30 @@
   }
 }
 
+@media (max-width: 767px) {
+  .carousel-item {
+    margin-top: 5vh;
+    height: 2rem !important;
+  }
+
+  .navigation {
+    margin-top: 5px;
+  }
+  .main-header  {
+    margin-top: 5px;
+    height: 12rem;
+  }
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 14rem;
+}
+}
+
 /*header*/
 .carousel-item {
-  height: 50vh;
+  height: 60vh;
   min-height: 300px;
 }
 
@@ -53,9 +87,9 @@
   text-align: center;
   padding: 20px;
   margin: 10px;
-  box-shadow: 11px 17px 14px -11px rgba(0,0,0,0.68);
-  -webkit-box-shadow: 11px 17px 14px -11px rgba(0,0,0,0.68);
-  -moz-box-shadow: 11px 17px 14px -11px rgba(0,0,0,0.68);
+  box-shadow: 10px 10px 11px -12px rgba(0,0,0,0.78);
+  -webkit-box-shadow: 10px 10px 11px -12px rgba(0,0,0,0.78);
+  -moz-box-shadow: 10px 10px 11px -12px rgba(0,0,0,0.78);
   border-radius: 0.25rem;
 }
 .kartu img {
@@ -67,6 +101,10 @@
   font-size: 16px;
   font-weight: 500;
   text-align: center;
+}
+
+.col-md-3:hover {
+  transform: scale(1.05);
 }
 
 /*artikel*/
@@ -142,6 +180,12 @@
   background-color: #C4DAD2;
 }
 
+.card {
+  box-shadow: 10px 10px 11px -12px rgba(0,0,0,0.78);
+  -webkit-box-shadow: 10px 10px 11px -12px rgba(0,0,0,0.78);
+  -moz-box-shadow: 10px 10px 11px -12px rgba(0,0,0,0.78);
+}
+
 .row {
   padding: 2rem;
 }
@@ -168,6 +212,22 @@
   color: #6c757d;
 }
 
+.headercalc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.headercalc h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
 /*bmi*/
 .kalkulator {
   display: flex;
@@ -175,9 +235,33 @@
   margin-top: 50px;
 }
 
-.hitung {
-  background-color: #6A9C89;
+.containerbx {
+  display: flex;
+    flex-direction: column;
 }
+
+.containerbx h2 {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.containerbx h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.containerby h2 {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.containerby h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
 
 
 /*footer*/
